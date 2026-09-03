@@ -1,0 +1,31 @@
+{
+  "name": "aws-serverless-iac",
+  "version": "1.0.0",
+  "description": "API REST serverless (AWS Lambda + API Gateway + DynamoDB) provisionada como Infraestrutura como Código com o Serverless Framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "offline": "serverless dynamodb install && serverless offline start --stage local"
+  },
+  "keywords": [
+    "aws",
+    "serverless",
+    "lambda",
+    "dynamodb",
+    "iac"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1125.0",
+    "@aws-sdk/lib-dynamodb": "^3.1125.0",
+    "uuid": "^14.0.2"
+  },
+  "devDependencies": {
+    "dynalite": "^4.0.0",
+    "serverless": "^3.40.0",
+    "serverless-dynamodb": "^0.2.58",
+    "serverless-offline": "^13.10.1"
+  }
+}
+
